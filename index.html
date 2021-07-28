@@ -7,8 +7,48 @@
     <link rel="shortcut icon" href=".\img\L.ico" type="image/L.ico" />
     <link rel="stylesheet"type="text/css"href=".\css\main.css">
     <title>FW</title>
+    <style type="text/css"> 
+        #wrap{
+            min-height: 2000px;
+              
+        }
+        #back{
+            width: 50px;
+            height: 50px;
+            image-rendering: auto;
+            position: fixed;
+            right: 40px;
+            bottom: 40px;
+        }
+    </style>
+
 </head>
 <body>
+    <header class="control">
+    </header>
+    <div id="wrap"></div>
+    <div id="back"><img src=".\img\top_off.png"onmouseover="this.src='./img/top_on.png'"
+        onmouseout="this.src='./img/top_off.png'"></div>
     
 </body>
+<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function($){
+     $(window).scroll(function() {
+    if ($(this).scrollTop() > 10) {
+        $('#back').fadeIn();
+    } else {
+        $('#back').fadeOut();
+    }
+    });
+
+
+    $("#back").click(function() {
+        $("body,html").animate({
+        scrollTop: 0
+        }, 800);
+        return false;
+    });
+ });
+</script>
 </html>

@@ -1,0 +1,16 @@
+body{
+    box-sizing: border-box;
+    height:95%;
+    width: 95%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color:#000000;
+    font-family: "Copperplate", Times, serif;
+    text-align: justify;
+  }
+img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    text-align: center;
+  }
