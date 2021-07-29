@@ -7,29 +7,37 @@
     <link rel="shortcut icon" href=".\img\L.ico" type="image/L.ico" />
     <link rel="stylesheet"type="text/css"href=".\css\main.css">
     <title>FW</title>
-    <style type="text/css"> 
-        #wrap{
-            min-height: 2000px;
-              
-        }
-        #back{
-            width: 50px;
-            height: 50px;
-            image-rendering: auto;
-            position: fixed;
-            right: 40px;
-            bottom: 40px;
-        }
-    </style>
-
 </head>
 <body>
-    <header class="control">
+    <header>
+        <nav>
+            <a href="index.html"><img class="logo" id="logo1" src=".\img\Logo.png"/></a>
+          <div class="mobile-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+          <ul class="nav-list">
+            <li><a href="#"><b>Início</b></a></li>
+            <li><a href="#"><b>Sobre</b></a></li>
+            <li><a href="#"><b>Projetos</b></a></li>
+            <li><a href="#"><b>Contato</b></a></li>
+          </ul>
+        </nav>
+      </header>
+    <div class="menu"></div>
+    <img src="img/baner.png"/>
+    <header>
+    <div class="social">
+        <a href="https://twitter.com/Goik69470460"><img class="tt" src="img/tt.png"/></a>
+        <a href="https://twitter.com/Goik69470460"><img class="tt" src="img/in.png"/></a>
+        <a href="https://github.com/weslleycz"><img class="tt" src="img/git.png"/></a>
     </header>
+    </div>
     <div id="wrap"></div>
     <div id="back"><img src=".\img\top_off.png"onmouseover="this.src='./img/top_on.png'"
         onmouseout="this.src='./img/top_off.png'"></div>
-    
+        <script src="js/mobile-navbar.js"></script>
 </body>
 <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
 <script type="text/javascript">
@@ -41,8 +49,6 @@ jQuery(document).ready(function($){
         $('#back').fadeOut();
     }
     });
-
-
     $("#back").click(function() {
         $("body,html").animate({
         scrollTop: 0
