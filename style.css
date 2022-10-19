@@ -1,0 +1,6 @@
+body{
+    -webkit-font-smoothing: antialiased;
+    background: radial-gradient(80% 85.16% at 80.73% 22.2%, #0c0a0f 0%, #080A11 61.62%);
+    backdrop-filter: blur(60px);
+    color: #fff;
+}
